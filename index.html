@@ -10,11 +10,11 @@
 <body>
    <nav id="navbar">
       <ul>
-          <a href="#first-section"><li>Home</li></a>
-          <a href="#second-section"><li>Qualifications</li></a>
-          <a href="#third-section"><li>Experience</li></a>
-          <a href="#fourth-section"><li>Skills</li></a>
-          <a href="#fifth-section"><li>Additional</li></a>
+          <a href="#first-section" class="btn"><li>Home</li></a>
+          <a href="#second-section" class="btn active"><li>Qualifications</li></a>
+          <a href="#third-section" class="btn"><li>Experience</li></a>
+          <a href="#fourth-section" class="btn"><li>Skills</li></a>
+          <a href="#fifth-section" class="btn"><li>Additional</li></a>
       </ul>
    </nav>
 
@@ -559,7 +559,10 @@
             </table> 
         </div>   
    </div>
-   
+   <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
    <script src="js/main.js"></script> 
    <script>
         // When the user scrolls down the height of the first section -50px, slide down the navbar
@@ -569,7 +572,7 @@
           if (document.body.scrollTop > document.getElementById("first-section").clientHeight-50 || document.documentElement.scrollTop > document.getElementById("first-section").clientHeight-50) {
             document.getElementById("navbar").style.top = "3rem";
             document.getElementById("navbar").style.position = "fixed";
-            document.querySelectorAll.style.overflow = "hidden";  
+//            document.querySelectorAll.style.overflow = "hidden";  
           } else {
             document.getElementById("navbar").style.top = "100%";
             document.getElementById("navbar").style.position = "absolute";
